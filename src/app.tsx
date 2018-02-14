@@ -1,18 +1,16 @@
 import * as React from "react";
 import styled from 'styled-components';
-import Header from "./components/header";
+import Header from "./components/header/header";
 
-class App extends React.Component<any, any> {
-    render() {
-        return (
-            <Block>
-                <Header text="Home and Away"
-                        logo="http://res.cloudinary.com/dbsfkfmbd/image/upload/q_auto,f_auto/logo.png">
-                </Header>
-            </Block>
-        );
-    }
-}
+const App = () => {
+    return (
+        <Block>
+            <Header text="Home and Away"
+                    logo="http://res.cloudinary.com/dbsfkfmbd/image/upload/q_auto,f_auto/logo.png">
+            </Header>
+        </Block>
+    );
+};
 
 // Create a Title component that'll render an <h1> tag with some styles
 const Block = styled.div`

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import Headline from "./headline";
 
 interface HeaderProps {
     text: string;
@@ -9,20 +10,10 @@ interface HeaderProps {
 const Header = ({text, logo}: HeaderProps) => {
     return (
         <Wrapper>
-            <Bottom>
-                <Img src={logo}/>
-                <div>
-                    {text}
-                </div>
-            </Bottom>
+           <Headline logo={logo} text={text}/>
         </Wrapper>
     );
 };
-
-const Img = styled.img`
-   height: 70%;
-   margin-right: 10px;
-`;
 
 const Wrapper = styled.header`
   box-sizing: border-box;
@@ -39,20 +30,6 @@ const Wrapper = styled.header`
   @media (max-width: 320px) {
       max-width: 100%;
   }
-`;
-
-const Bottom = styled.div`
-  position: absolute;
-  height: 30%;
-  width: 100%;
-  background: black;
-  bottom:0;
-  right: 0;
-  background-color: rgba(0,0,0,0.5);
-  color: white;
-  font-size: 1.6rem;
-  display: flex;
-  align-items: center;
 `;
 
 export default Header;
