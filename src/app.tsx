@@ -1,9 +1,13 @@
 import * as React from "react";
+import Header from "./components/header";
 
-export default class App extends React.Component<any, any> {
+class App extends React.Component<any, any> {
     render() {
         return (
-            <h1>Testing</h1>
+            <Header>
+            </Header>
         );
     }
 }
+
+export default App;
