@@ -2,15 +2,17 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 interface HeaderProps {
+    text: string;
+    logo: string;
 }
 
-const Header = (props: HeaderProps) => {
+const Header = ({text, logo}: HeaderProps) => {
     return (
         <Wrapper>
             <Bottom>
-                <Img src="http://res.cloudinary.com/dbsfkfmbd/image/upload/q_auto,f_auto/logo.png"/>
+                <Img src={logo}/>
                 <div>
-                    Home and Away
+                    {text}
                 </div>
             </Bottom>
         </Wrapper>
@@ -31,12 +33,11 @@ const Wrapper = styled.header`
   background-size:contain;
   background-position:center;
   border: 5px solid black;
-  max-width: 638px;
-  height: 360px;
+  max-width: 320px;
+  height: 180px;
   
   @media (max-width: 320px) {
       max-width: 100%;
-      height: 180px;
   }
 `;
 

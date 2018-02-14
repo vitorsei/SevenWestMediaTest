@@ -6,7 +6,8 @@ class App extends React.Component<any, any> {
     render() {
         return (
             <Block>
-                <Header>
+                <Header text="Home and Away"
+                        logo="http://res.cloudinary.com/dbsfkfmbd/image/upload/q_auto,f_auto/logo.png">
                 </Header>
             </Block>
         );
