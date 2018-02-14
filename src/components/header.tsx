@@ -31,11 +31,12 @@ const Wrapper = styled.header`
   background-size:contain;
   background-position:center;
   border: 5px solid black;
-  max-width: 320px;
-  height: 180px;
+  max-width: 638px;
+  height: 360px;
   
   @media (max-width: 320px) {
       max-width: 100%;
+      height: 180px;
   }
 `;
 
