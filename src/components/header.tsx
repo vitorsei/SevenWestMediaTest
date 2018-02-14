@@ -33,6 +33,10 @@ const Wrapper = styled.header`
   border: 5px solid black;
   max-width: 320px;
   height: 180px;
+  
+  @media (max-width: 320px) {
+      max-width: 100%;
+  }
 `;
 
 const Bottom = styled.div`

@@ -17,6 +17,11 @@ class App extends React.Component<any, any> {
 const Block = styled.div`
   height: 100vh;
   background: #1c1c1c;
+  padding: 5%;
+  
+  @media (max-width: 320px) {
+      padding:0;
+  }
 `;
 
 export default App;
