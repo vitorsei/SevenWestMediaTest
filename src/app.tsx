@@ -1,13 +1,22 @@
 import * as React from "react";
+import styled from 'styled-components';
 import Header from "./components/header";
 
 class App extends React.Component<any, any> {
     render() {
         return (
-            <Header>
-            </Header>
+            <Block>
+                <Header>
+                </Header>
+            </Block>
         );
     }
 }
+
+// Create a Title component that'll render an <h1> tag with some styles
+const Block = styled.div`
+  height: 100vh;
+  background: #1c1c1c;
+`;
 
 export default App;

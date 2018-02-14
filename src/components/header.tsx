@@ -30,6 +30,7 @@ const Wrapper = styled.header`
   background-color: black;
   background-size:contain;
   background-position:center;
+  border: 5px solid black;
   max-width: 320px;
   height: 180px;
 `;
