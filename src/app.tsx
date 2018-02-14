@@ -6,7 +6,8 @@ const App = () => {
     return (
         <Block>
             <Header text="Home and Away"
-                    logo="http://res.cloudinary.com/dbsfkfmbd/image/upload/q_auto,f_auto/logo.png">
+                    logo="http://res.cloudinary.com/dbsfkfmbd/image/upload/q_auto,f_auto/logo.png"
+                    backgroundImg="https://res.cloudinary.com/dbsfkfmbd/image/upload/q_auto,f_auto/tile.jpg">
             </Header>
         </Block>
     );
